@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Average Finder</title>
+    <style>
+        #main{
+            width: 755px;
+            padding: 50px;
+            margin-top: 30px;
+        }
+        #avg{
+            font-size: 25px;
+        }
+        body{
+            background-color:lightpink;
+            font-family: Zalando Sans Expanded;
+        }
+        kbd{
+            font-size: 35px;
+        }
+        #avg{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<center>
+    <br>
+<h1 id="heading"></h1>
+    <div id="main" class="form-control">
+        <input class="form-control" type="number" id="english" placeholder="enter english grade..."/>
+        <br>
+        <input class="form-control" type="number" id="math" placeholder="enter math grade..."/>
+        <br>
+        <input class="form-control" type="number" id="science" placeholder="enter science grade..."/>
+        <br>
+        <br>
+        <button id="button" class="form-control btn btn-dark" type="button" py-click="average_grade">calculate average</button>
+        <br>
+        <br>
+        <h2 id="avg"></h2>
+        <h2 id="pass"></h2>
+    </div>
+
+    <script type="py" src="1.py"></script>
+</center>
+
+
+</body>
+</html>
